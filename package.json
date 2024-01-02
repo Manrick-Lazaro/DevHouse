@@ -1,0 +1,11 @@
+{
+  "name": "DevHouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Manrick-Lazaro/DevHouse.git",
+  "author": "manrick Lázaro <manricksantos@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
