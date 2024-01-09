@@ -1,15 +1,12 @@
-const express = require("express");
-const routes = require("./routes");
-const mongoose = require("mongoose");
+import express from "express";
+import routes from "./routes";
+import mongoose from "mongoose";
 
 class App {
     constructor() {
         this.server = express();
 
-        mongoose.connect("mongodb+srv://devhouse:devhouse@devhouse.4djte3x.mongodb.net/DevHouse?retryWrites=true&w=majority", {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        mongoose.connect("mongodb+srv://devhouse:devhouse@devhouse.4djte3x.mongodb.net/DevHouse?retryWrites=true&w=majority");
 
         this.middlewares();
         this.routes();
